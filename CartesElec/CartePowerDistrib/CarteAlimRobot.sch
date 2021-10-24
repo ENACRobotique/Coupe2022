@@ -149,19 +149,6 @@ Wire Wire Line
 Connection ~ 1300 2050
 Wire Wire Line
 	1300 2050 1300 2000
-$Comp
-L Connector:Conn_01x03_Male J10
-U 1 1 6173EBD3
-P 2250 2250
-F 0 "J10" H 2222 2182 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 2222 2273 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 2250 2250 50  0001 C CNN
-F 3 "~" H 2250 2250 50  0001 C CNN
-	1    2250 2250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2050 2350 1750 2350
 Wire Wire Line
 	1750 2350 1750 2500
 Wire Wire Line
@@ -171,16 +158,6 @@ Wire Wire Line
 Connection ~ 1550 2400
 Wire Wire Line
 	1550 2400 1450 2400
-Wire Wire Line
-	2050 2250 2050 2150
-Wire Wire Line
-	2050 2150 1850 2150
-Wire Wire Line
-	1850 2150 1850 2100
-Wire Wire Line
-	1850 2100 1700 2100
-Connection ~ 2050 2150
-Connection ~ 1700 2100
 Wire Notes Line
 	550  1350 3050 1350
 Wire Notes Line
@@ -537,42 +514,43 @@ Wire Wire Line
 	1550 6700 1500 6700
 Wire Wire Line
 	1950 6850 1850 6850
-$Comp
-L Connector:Conn_01x02_Male J11
-U 1 1 61783305
-P 2500 6550
-F 0 "J11" H 2608 6731 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 2608 6640 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 2500 6550 50  0001 C CNN
-F 3 "~" H 2500 6550 50  0001 C CNN
-	1    2500 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 6178486F
-P 2900 6650
-F 0 "#PWR015" H 2900 6400 50  0001 C CNN
-F 1 "GND" H 2905 6477 50  0000 C CNN
-F 2 "" H 2900 6650 50  0001 C CNN
-F 3 "" H 2900 6650 50  0001 C CNN
-	1    2900 6650
-	1    0    0    -1  
-$EndComp
-Text GLabel 2800 6550 2    50   Input ~ 0
+Text GLabel 2250 2400 2    50   Input ~ 0
 SignalPowerOn
-Wire Wire Line
-	2800 6550 2700 6550
-Wire Wire Line
-	2900 6650 2700 6650
-Wire Notes Line
-	650  6200 3550 6200
-Wire Notes Line
-	3550 6200 3550 7550
 Wire Notes Line
 	3550 7550 650  7550
 Wire Notes Line
 	650  7550 650  6200
 Text Notes 800  6350 0    50   ~ 0
 Signal Arrêt MOSFET
+$Comp
+L Connector:Conn_01x04_Male J10
+U 1 1 6176C340
+P 2300 2100
+F 0 "J10" H 2272 1982 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 2272 2073 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-AM_1x04_P2.50mm_Vertical" H 2300 2100 50  0001 C CNN
+F 3 "~" H 2300 2100 50  0001 C CNN
+	1    2300 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 2350 1950 2350
+Wire Wire Line
+	1950 2350 1950 2100
+Wire Wire Line
+	1950 2100 2100 2100
+Wire Wire Line
+	2100 2000 2100 1900
+Wire Wire Line
+	2100 2000 1850 2000
+Connection ~ 2100 2000
+Connection ~ 1850 2000
+Wire Wire Line
+	2250 2400 2100 2400
+Wire Wire Line
+	2100 2400 2100 2200
+Wire Notes Line
+	3550 6200 650  6200
+Wire Notes Line
+	3550 6200 3550 7550
 $EndSCHEMATC
