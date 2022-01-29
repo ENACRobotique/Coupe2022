@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "CartePrincipale")(type "Legacy")(uri "${KIPRJMOD}/library/NUCLEO-F401RE.lib")(options "")(descr ""))
+  (lib (name "TM1637")(type "Legacy")(uri "${KIPRJMOD}/library/TM1637.lib")(options "")(descr ""))
+)
