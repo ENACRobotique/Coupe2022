@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "Librar2022y")(type "Legacy")(uri "C:/Users/robot/Documents/Librar2022y.pretty")(options "")(descr ""))
+  (lib (name "library")(type "KiCad")(uri "${KIPRJMOD}/library")(options "")(descr ""))
 )
