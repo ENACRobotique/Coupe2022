@@ -382,7 +382,9 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": {
+      "+12V": "rgb(255, 162, 6)"
+    }
   },
   "pcbnew": {
     "last_paths": {
