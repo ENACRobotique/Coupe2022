@@ -1854,6 +1854,8 @@
     )
   )
 
+  (gr_rect (start 78 119) (end 130 185) (layer "Edge.Cuts") (width 0.05) (fill none) (tstamp b8f7908a-05f2-4c9c-b089-002d9adaa990))
+
   (segment (start 85.09 139.7) (end 86.36 139.7) (width 1.2) (layer "F.Cu") (net 1) (tstamp 013702ec-8abc-4fba-aafc-2bc626cf726b))
   (segment (start 82.55 137.16) (end 82.55 133.48) (width 1.2) (layer "F.Cu") (net 1) (tstamp 037b8b2a-81cf-4fe5-8043-ba2ee04d0d9d))
   (segment (start 122.93 140.97) (end 123.19 140.71) (width 1.2) (layer "F.Cu") (net 1) (tstamp 03fbd8e1-03df-448e-baf4-9abb3969538f))
