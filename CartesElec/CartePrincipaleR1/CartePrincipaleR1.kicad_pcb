@@ -6117,7 +6117,7 @@
   (gr_text "+\n" (at 58.7 100.4 90) (layer "F.SilkS") (tstamp 2dd4bf84-4d3a-42ed-b31e-be2fb2d19684)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Robot 1\n\nby V@ENAC" (at 105.1 38.2) (layer "F.SilkS") (tstamp 317d6cde-fc64-434a-9457-f27f7fcf8d58)
+  (gr_text "Coupe 2022		Robot 1 \n\n by V@ENAC" (at 105.1 38.2) (layer "F.SilkS") (tstamp 317d6cde-fc64-434a-9457-f27f7fcf8d58)
     (effects (font (size 1 1.5) (thickness 0.15)))
   )
   (gr_text "Carte \nPrincipale" (at 61 55.4 90) (layer "F.SilkS") (tstamp 58e422ee-ee17-4f6f-822a-847576ddb0bb)
