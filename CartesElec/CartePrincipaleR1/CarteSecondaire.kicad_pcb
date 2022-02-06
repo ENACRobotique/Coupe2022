@@ -443,7 +443,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp 20cca02e-4c4d-4961-b6b4-b40a1731b220)
-    (at 94.539011 126.391511)
+    (at 94.5 126.3)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (attr exclude_from_pos_files exclude_from_bom)
@@ -980,7 +980,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp 7a4ce4b3-518a-4819-b8b2-5127b3347c64)
-    (at 94.539011 182.271511)
+    (at 94.5 182.1)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (attr exclude_from_pos_files exclude_from_bom)
@@ -1233,7 +1233,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp a5e521b9-814e-4853-a5ac-f158785c6269)
-    (at 136.449011 126.391511)
+    (at 136.5 126.3)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (attr exclude_from_pos_files exclude_from_bom)
@@ -1442,7 +1442,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp cff34251-839c-4da9-a0ad-85d0fc4e32af)
-    (at 136.449011 182.271511)
+    (at 136.5 182.3)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (attr exclude_from_pos_files exclude_from_bom)
