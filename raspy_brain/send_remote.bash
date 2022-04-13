@@ -14,8 +14,10 @@ remote_password=${3:-'sqilthezorld'}
 remote_account=${4:-'ubuntu'}
 
 ##copy the hex file the file to the remote server
-scp $local_folder_firmware/firmware.bin $remote_account@$remote_ip:/home/ubuntu/firmware.bin
+scp $local_folder_firmware/firmware.bin $remote_account@$remote_ip:/home/$remote_account/firmware.bin
 
+
+#---- inside SSH ----
 #connect in ssh with password
 #ssh $remote_account@$remote_ip
 #
@@ -23,25 +25,25 @@ scp $local_folder_firmware/firmware.bin $remote_account@$remote_ip:/home/ubuntu/
 #expect "password:"
 #sleep 1
 #send "$remote_password\r"
-#
+
 ##check if stlink is installed and if not, install it with apt-get stlink-tools
 #if ! [ -x "$(command -v st-flash)" ]; then
 #  echo 'st-flash is not installed. Installing...'
 #  sudo apt-get install -y stlink-tools
 #fi
 #
-#
-##flash the hex file on the remote server
-#ssh $remote_account@$remote_ip 'sudo st-flash write /home/$remote_account/firmware.bin' ' 0x08000000'
-#
-##check if the hex file was flashed successfully 
-#ssh $remote_account@$remote_ip 'sudo st-flash read 0x08000000'
-#
-##and echo a message wether it's successful or not
-#if [ $? -eq 0 ]; then
-#  echo 'The hex file was flashed successfully'
-#else
-#  echo 'The hex file was not flashed successfully'
-#fi
+
+#flash the hex file on the remote server
+sudo st-flash write /home/$remote_account/firmware.bin 0x08000000
+
+#check if the hex file was flashed successfully 
+sudo st-flash read 0x08000000
+
+#and echo a message wether it's successful or not
+if [ $? -eq 0 ]; then
+  echo 'The hex file was flashed successfully'
+else
+  echo 'The hex file was not flashed successfully'
+fi
 
 
