@@ -19,6 +19,8 @@ scp $local_folder_firmware/firmware.bin $remote_account@$remote_ip:/home/$remote
 
 #---- inside SSH ----
 #connect in ssh with password
+#-t option is for staying in the ssh session https://unix.stackexchange.com/questions/671351/how-to-run-commands-after-sshpass-without-closing-connection
+sshpass -p '$remote_password' ssh -t $remote_account@$remote_ip;
 #ssh $remote_account@$remote_ip
 #
 ##expect password
