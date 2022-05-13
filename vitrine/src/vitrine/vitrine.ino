@@ -32,25 +32,32 @@ void loop(){
             FastLED.show();
         }
         int c= 0;
+        int vs2 = 95;
         while(1){
+            servo1.write(90);
             c=(c+1)%2;
             for (int i =nbLED; i>-1;i--){
                 if (c==0){
-                servo2.write(115*(nbLED-i)/nbLED+95*i/nbLED);
-            }
-            else{
-                servo2.write(95*(nbLED-i)/nbLED+115*i/nbLED);
-            }
+                    if (vs2<115){
+                        servo2.write(++vs2);
+                    }
+                    
+                }
+                else{
+                    if (vs2>95){
+                        servo2.write(--vs2);
+                    }
+                    
+                }
                 if (i != nbLED){
-                    leds[i]=CRGB::White;
+                    leds[i]=CRGB::Black;
                 }
                 if (i != 0){
-                    leds[i-1]=CRGB::Black;
+                    leds[i-1]=CRGB::White;
                 }
-                delay (100);
+                delay (25);
                 FastLED.show();
             }
-            delay(1500);
             
         }
     }
